@@ -1,5 +1,5 @@
 module SongsHelper
-  display_artist(song)
+  def display_artist(song)
     if song.artist.exist?
       link_to song.artist.name, artist_path
     else
