@@ -1,6 +1,6 @@
 module SongsHelper
-  display_artist
-    if @song.artist.exist?
+  display_artist(song)
+    if song.artist.exist?
       link_to song_path
     else
       link_to edit_song_path
